@@ -15,7 +15,7 @@ class AuthController extends Controller
     /**
      * @throws \Exception
      */
-    public function login(LoginRequest $request)
+    public function login(LoginRequest $request): \Illuminate\Http\JsonResponse
     {
         $this->authService->login($request);
 
